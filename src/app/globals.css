@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500;700&family=Noto+Serif:wght@400;700&family=Prosto+One&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,17 +7,19 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-noto-serif: 'Noto Serif', serif;
+  --font-dm-mono: 'DM Mono', monospace;
+  --font-prosto-one: 'Prosto One', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-noto-serif);
 }
