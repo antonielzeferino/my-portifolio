@@ -5,8 +5,8 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #323232;
+  --foreground: #cecece;
   --font-noto-serif: 'Noto Serif', serif;
   --font-dm-mono: 'DM Mono', monospace;
   --font-prosto-one: 'Prosto One', sans-serif;

@@ -4,7 +4,7 @@ import "./globals.css";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import profile from '@/public/images/profile.svg'
+import profile from '@/public/images/profile.png'
 import galaxy from '@/public/backgrounds/galaxy.png'
 
 export default function RootLayout({ children }) {
