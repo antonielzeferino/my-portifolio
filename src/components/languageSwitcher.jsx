@@ -22,7 +22,7 @@ const LanguageSwitcher = () => {
           backdropFilter: 'blur(5px)',
         }}
       >
-        <Image src={brIcon} alt="Brazilian Portuguese" width={25} height={25} />
+        <Image src={brIcon} alt="Brazilian Portuguese" width={25} height={25}  priority={false}/>
       </button>
       <button
         onClick={() => handleLanguageChange('en')}
@@ -33,7 +33,7 @@ const LanguageSwitcher = () => {
           backdropFilter: 'blur(5px)',
         }}
       >
-        <Image src={usaIcon} alt="English" width={25} height={25} />
+        <Image src={usaIcon} alt="English" width={25} height={25} priority={false}/>
       </button>
     </div>
   );

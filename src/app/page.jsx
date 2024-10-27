@@ -34,7 +34,7 @@ export default function Home() {
   return (
     <>
       <section
-        className="pt-4 w-full min-h-[90vh]"
+        className="w-full min-h-[90vh]"
         style={{
           backgroundImage: `url(${galaxy.src})`,
           backgroundSize: 'cover',
@@ -83,7 +83,7 @@ export default function Home() {
       </section>
       <section className="bg-gradient-to-r from-indigo-900 via-violet-950 to-fuchsia-900 p-6 rounded-lg shadow-md">
         <h5 className="text-2xl font-serif font-semibold indent-4 mb-4">
-          Competências
+          {idiom == "pt" ? 'Competências' : 'Skills'}
         </h5>
         <SkillsList />
       </section>
