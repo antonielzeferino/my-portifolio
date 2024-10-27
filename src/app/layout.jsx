@@ -4,8 +4,10 @@ import "./globals.css";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import profile from '@/public/images/profile.png'
-import galaxy from '@/public/backgrounds/galaxy.png'
+import profilePhoto from '@/public/images/profile.png';
+import galaxy from '@/public/backgrounds/galaxy.png';
+import { IdiomProvider } from "@/provider/idiomProvider";
+import LanguageSwitcher from "@/components/languageSwitcher";
 
 export default function RootLayout({ children }) {
   useEffect(() => {
@@ -23,11 +25,13 @@ export default function RootLayout({ children }) {
           <meta name="description" content="Programador front-end em busca de uma primeira oportunidade." />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
-          <link rel="preload" href={profile.src} as="image" />
+          <link rel="preload" href={profilePhoto.src} as="image" />
           <link rel="preload" href={galaxy.src} as="image" />
         </head>
         <body className="antialiased">
-          {children}
+          <IdiomProvider>
+            {children}
+          </IdiomProvider>
         </body>
       </html>
     </>

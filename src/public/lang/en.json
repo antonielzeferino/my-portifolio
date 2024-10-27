@@ -1,0 +1,59 @@
+{
+  "profile": {
+    "profile_alt": "Profile photo of Antoniel Zeferino",
+    "name": "Antoniel Zeferino",
+    "job_title": "Front-end Developer",
+    "description": "I enjoy creating functional and user-centered interfaces, always striving to improve the experience and make everything more intuitive. In each project, I see an opportunity to learn something new and evolve my skills. My goal is to deliver solutions that make sense for those who will use them, in a practical and efficient way, without complicating things."
+  },
+  "habilities": [
+    {
+      "title": "Programming Languages",
+      "content": [
+        "JavaScript",
+        "TypeScript",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "title": "Frameworks and Libraries",
+      "content": [
+        "React.js",
+        "Next.js",
+        "Tailwind CSS",
+        "Bootstrap"
+      ]
+    },
+    {
+      "title": "Interpersonal Skills",
+      "content": [
+        "Effective Communication",
+        "Intermediate English (B2)",
+        "Critical Thinking",
+        "Problem Solving"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "title": "Leadership",
+      "description": "As vice-coordinator of the Youth Group, I developed leadership skills by managing teams, coordinating events, and effectively resolving conflicts."
+    },
+    {
+      "title": "Teamwork",
+      "description": "I actively collaborated with various members, ensuring good communication and harmony within the group."
+    },
+    {
+      "title": "Organization",
+      "description": "As treasurer, I was responsible for the efficient administration of financial resources, enhancing my organizational skills."
+    },
+    {
+      "title": "Project Management",
+      "description": "I coordinated events, ensuring planning and execution of activities within deadlines and with available resources."
+    },
+    {
+      "title": "Conflict Resolution",
+      "description": "I faced and resolved problems effectively, always seeking the best solution for the group."
+    }
+  ]
+}
