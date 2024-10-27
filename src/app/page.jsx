@@ -3,7 +3,7 @@
 import Image from "next/image";
 import profilePhoto from '@/public/images/profile.png';
 import galaxy from '@/public/backgrounds/galaxy.png';
-import techbg from '@/public/backgrounds/violet.png';
+import projectsBG from '@/public/backgrounds/kl.png';
 import HabilitiesList from "@/components/HabilitiesList";
 import en from "@/public/lang/en.json";
 import pt from "@/public/lang/pt.json";
@@ -91,7 +91,7 @@ export default function Home() {
       </section>
       <section
         style={{
-          backgroundImage: `url(${techbg.src})`,
+          backgroundImage: `url(${projectsBG.src})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center'
         }}
