@@ -55,5 +55,28 @@
       "title": "Conflict Resolution",
       "description": "I faced and resolved problems effectively, always seeking the best solution for the group."
     }
-  ]
+  ],
+  "footer": {
+    "contact": {
+      "title": "Get in Touch",
+      "links": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/seu-perfil"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/seu-usuario"
+        },
+        {
+          "label": "Email",
+          "url": "mailto:seuemail@example.com"
+        },
+        {
+          "label": "WhatsApp",
+          "url": "https://wa.me/SeuNumero"
+        }
+      ]
+    }
+  }
 }

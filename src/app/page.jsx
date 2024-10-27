@@ -3,6 +3,7 @@
 import Image from "next/image";
 import profilePhoto from '@/public/images/profile.png';
 import galaxy from '@/public/backgrounds/galaxy.png';
+import techbg from '@/public/backgrounds/violet.png';
 import HabilitiesList from "@/components/HabilitiesList";
 import en from "@/public/lang/en.json";
 import pt from "@/public/lang/pt.json";
@@ -10,6 +11,7 @@ import { useIdiom } from "@/provider/idiomProvider";
 import { useEffect, useState } from "react";
 import LanguageSwitcher from "@/components/languageSwitcher";
 import SkillsList from "@/components/skillsList";
+import Footer from "@/components/footer";
 
 export default function Home() {
   const { idiom } = useIdiom();
@@ -81,13 +83,23 @@ export default function Home() {
         </div>
         <HabilitiesList />
       </section>
-      <section className="bg-gradient-to-r from-indigo-900 via-violet-950 to-fuchsia-900 p-6 rounded-lg shadow-md">
+      <section className="bg-gradient-to-r from-indigo-900 via-violet-950 to-fuchsia-950 p-6 rounded-lg shadow-md">
         <h5 className="text-2xl font-serif font-semibold indent-4 mb-4">
           {idiom == "pt" ? 'Competências' : 'Skills'}
         </h5>
         <SkillsList />
       </section>
+      <section
+        style={{
+          backgroundImage: `url(${techbg.src})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+        className="min-h-[500px] h-[65vh]"
+      >
 
+      </section>
+      <Footer />
       <p className="hidden">icones de linguagem por <a target="_blank" href="https://icons8.com">Icons8</a></p>
     </>
   );

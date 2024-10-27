@@ -55,5 +55,28 @@
       "title": "Resolução de conflitos",
       "description": "Enfrentei e resolvi problemas de forma eficaz, buscando sempre a melhor solução para o grupo."
     }
-  ]
+  ],
+  "footer": {
+    "contact": {
+      "title": "Entre em contato",
+      "links": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/anotonielzeferino"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/antonielzeferino"
+        },
+        {
+          "label": "Email",
+          "url": "mailto:antonielzeferino0@gmail.com"
+        },
+        {
+          "label": "WhatsApp",
+          "url": "https://wa.me/95407002"
+        }
+      ]
+    }
+  }
 }
