@@ -5,7 +5,7 @@ import { useIdiom } from '@/provider/idiomProvider';
 import en from '@/public/lang/en.json'; 
 import pt from '@/public/lang/pt.json'; 
 
-export const textTransition = "transition-all duration-200 ease-in-out hover:text-purple-900 hover:scale-105";
+export const textTransition = "transition-all duration-200 ease-in-out hover:text-blue-800 hover:scale-105";
 
 function SkillsList() {
   const { idiom } = useIdiom();
@@ -104,8 +104,13 @@ function SkillsList() {
       onMouseMove={handleMouseMove}
     >
       {duplicateSkills().map((skill, index) => (
-        <div key={index} className="bg-gray-800/50 rounded-lg shadow-lg p-4 flex flex-col items-center transition-transform transform hover:scale-105 min-w-[250px]">
-          <h5 className={`text-xl font-semibold text-blue-600 mb-2 ${textTransition}`}>
+        <div 
+          key={index} 
+          data-aos="zoom-in"
+          data-aos-delay={index * 400}
+          className="bg-gray-800/50 rounded-lg shadow-lg p-4 flex flex-col items-center transition-transform transform hover:scale-105 min-w-[250px]"
+        >
+          <h5 className={`text-xl font-semibold text-blue-600 mb-2 text-center ${textTransition}`}>
             {skill.title}
           </h5>
           <p className="text-center text-gray-200">{skill.description}</p>
