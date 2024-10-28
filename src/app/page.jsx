@@ -1,17 +1,16 @@
 'use client';
 
 import Image from "next/image";
-import profilePhoto from '@/public/images/profile.png';
-import galaxy from '@/public/backgrounds/galaxy.png';
-import galaxyMobile from '@/public/backgrounds/galaxy-mobile.png';
+import profilePhoto from '/public/images/profile.png';
+import galaxy from '/public/backgrounds/galaxy.png';
+import galaxyMobile from '/public/backgrounds/galaxy-mobile.png';
 import HabilitiesList from "@/components/HabilitiesList";
-import en from "@/public/lang/en.json";
-import pt from "@/public/lang/pt.json";
 import { useIdiom } from "@/provider/idiomProvider";
 import { useEffect, useState } from "react";
 import LanguageSwitcher from "@/components/languageSwitcher";
 import SkillsList from "@/components/skillsList";
 import Footer from "@/components/footer";
+import ProjectsList from "@/components/projectsList";
 
 export default function Home() {
   const { idiom } = useIdiom();
@@ -19,9 +18,13 @@ export default function Home() {
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
-    const translation = idiom === "pt" ? pt : en;
-    setTranslation(translation);
-  }, [idiom]);
+    const loadTranslations = async () => {
+      const res = await fetch(`/lang/${idiom}.json`);
+      const data = await res.json();
+      setTranslation(data);
+    };
+    loadTranslations()
+  },[idiom])
 
   useEffect(() => {
     if (window.innerWidth < 768) {
@@ -106,9 +109,8 @@ export default function Home() {
           backgroundPosition: 'center',
           imageRendering: 'crisp-edges'
         }}
-        className="min-h-[500px] h-[65vh]"
       >
-
+        <ProjectsList/>
       </section>
       <Footer />
       <p className="hidden">icones de linguagem por <a target="_blank" href="https://icons8.com">Icons8</a></p>

@@ -4,9 +4,9 @@ import "./globals.css";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import profilePhoto from '@/public/images/profile.png';
-import galaxy from '@/public/backgrounds/galaxy.png';
-import galaxyMobile from '@/public/backgrounds/galaxy-mobile.png';
+import profilePhoto from '/public/images/profile.png';
+import galaxy from '/public/backgrounds/galaxy.png';
+import galaxyMobile from '/public/backgrounds/galaxy-mobile.png';
 import { IdiomProvider } from "@/provider/idiomProvider";
 
 export default function RootLayout({ children }) {

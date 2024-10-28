@@ -1,0 +1,82 @@
+{
+  "profile": {
+    "profile_alt": "Foto de perfil de Antoniel Zeferino",
+    "name": "Antoniel Zeferino",
+    "job_title": "Desenvolvedor front-end",
+    "description": "Eu gosto de criar interfaces funcionais e voltadas para o usuário, sempre buscando melhorar a experiência e tornar tudo mais intuitivo. Em cada projeto, vejo uma chance de aprender algo novo e evoluir minhas habilidades. Meu objetivo é entregar soluções que façam sentido para quem vai usá-las, de forma prática e eficiente, sem complicar."
+  },
+  "habilities": [
+    {
+      "title": "Linguagens de Programação",
+      "content": [
+        "JavaScript",
+        "TypeScript",
+        "HTML",
+        "CSS"
+      ]
+    },
+    {
+      "title": "Frameworks e Bibliotecas",
+      "content": [
+        "React.js",
+        "Next.js",
+        "Tailwind CSS",
+        "Bootstrap"
+      ]
+    },
+    {
+      "title": "Habilidades Interpessoais",
+      "content": [
+        "Comunicação Eficaz",
+        "Inglês intermediário (B2)",
+        "Pensamento Crítico",
+        "Resolução de Problemas"
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "title": "Liderança",
+      "description": "Como vice-coordenador do Grupo de Jovens, desenvolvi habilidades de liderança ao gerenciar equipes, coordenar eventos e resolver conflitos de forma eficaz."
+    },
+    {
+      "title": "Trabalho em equipe",
+      "description": "Colaborei ativamente com diversos membros, garantindo a boa comunicação e a harmonia entre o grupo."
+    },
+    {
+      "title": "Organização",
+      "description": "Ao atuar como tesoureiro, fui responsável pela administração eficiente dos recursos financeiros, aprimorando minhas habilidades organizacionais."
+    },
+    {
+      "title": "Gestão de projetos",
+      "description": "Coordenei eventos, garantindo o planejamento e execução de atividades dentro dos prazos e com os recursos disponíveis."
+    },
+    {
+      "title": "Resolução de conflitos",
+      "description": "Enfrentei e resolvi problemas de forma eficaz, buscando sempre a melhor solução para o grupo."
+    }
+  ],
+  "footer": {
+    "contact": {
+      "title": "Entre em contato",
+      "links": [
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/in/antonielzeferino"
+        },
+        {
+          "label": "GitHub",
+          "url": "https://github.com/antonielzeferino"
+        },
+        {
+          "label": "Email",
+          "url": "mailto:antonielzeferino0@gmail.com"
+        },
+        {
+          "label": "WhatsApp",
+          "url": "https://wa.me/95407002"
+        }
+      ]
+    }
+  }
+}
