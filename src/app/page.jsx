@@ -3,7 +3,7 @@
 import Image from "next/image";
 import profilePhoto from '@/public/images/profile.png';
 import galaxy from '@/public/backgrounds/galaxy.png';
-import projectsBG from '@/public/backgrounds/galaxy2.png';
+import galaxyMobile from '@/public/backgrounds/galaxy-mobile.png';
 import HabilitiesList from "@/components/HabilitiesList";
 import en from "@/public/lang/en.json";
 import pt from "@/public/lang/pt.json";
@@ -16,11 +16,20 @@ import Footer from "@/components/footer";
 export default function Home() {
   const { idiom } = useIdiom();
   const [t, setTranslation] = useState({});
+  const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
     const translation = idiom === "pt" ? pt : en;
     setTranslation(translation);
   }, [idiom]);
+
+  useEffect(() => {
+    if (window.innerWidth < 768) {
+      setIsMobile(true)
+    } else (
+      setIsMobile(false)
+    )
+  },[])
 
   const defaultTranslation = {
     profile: {
@@ -38,10 +47,10 @@ export default function Home() {
       <section
         className="w-full min-h-[90vh]"
         style={{
-          backgroundImage: `url(${galaxy.src})`,
+          backgroundImage: `url(${isMobile ? galaxyMobile.src : galaxy.src})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          backgroundAttachment: 'fixed'
+          imageRendering: 'crisp-edges'
         }}
       >
         <LanguageSwitcher />
@@ -95,8 +104,7 @@ export default function Home() {
           backgroundImage: `url(${galaxy.src})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          backgroundPosition: 'center',
-          backgroundAttachment: 'fixed'
+          imageRendering: 'crisp-edges'
         }}
         className="min-h-[500px] h-[65vh]"
       >
