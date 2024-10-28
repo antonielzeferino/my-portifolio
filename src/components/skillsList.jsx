@@ -2,8 +2,6 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import { useIdiom } from '@/provider/idiomProvider';
-import en from '@/public/lang/en.json'; 
-import pt from '@/public/lang/pt.json'; 
 
 export const textTransition = "transition-all duration-200 ease-in-out hover:text-blue-800 hover:scale-105";
 
@@ -18,9 +16,13 @@ function SkillsList() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const translation = idiom === "pt" ? pt : en;
-    setTranslation(translation.skills || []);
-  }, [idiom]);
+    const loadTranslations = async () => {
+      const res = await fetch(`/lang/${idiom}.json`);
+      const data = await res.json();
+      setTranslation(data.skills);
+    };
+    loadTranslations()
+  },[idiom])
 
   useEffect(() => {
     const handleResize = () => {

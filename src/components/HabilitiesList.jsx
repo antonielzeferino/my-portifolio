@@ -1,11 +1,8 @@
 'use client';
 
 import React, { useEffect, useState } from 'react';
-import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { useIdiom } from '@/provider/idiomProvider';
-import en from '@/public/lang/en.json'; 
-import pt from '@/public/lang/pt.json'; 
+import { useIdiom } from '@/provider/idiomProvider'; 
 
 export const textTransition = "transition-all duration-200 ease-in-out hover:text-purple-700 hover:scale-105";
 
@@ -14,9 +11,13 @@ function HabilitiesList() {
   const [t, setTranslation] = useState({});
 
   useEffect(() => {
-    const translation = idiom === "pt" ? pt : en;
-    setTranslation(translation);
-  }, [idiom]);
+    const loadTranslations = async () => {
+      const res = await fetch(`/lang/${idiom}.json`);
+      const data = await res.json();
+      setTranslation(data);
+    };
+    loadTranslations()
+  },[idiom]);
 
   return (
     <div className="flex flex-wrap gap-8 mt-10 p-4 justify-center items-center">

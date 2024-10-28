@@ -1,7 +1,7 @@
 import React from 'react';
 import { useIdiom } from '@/provider/idiomProvider';
-import brIcon from "@/public/icons/icon-brazil.png";
-import usaIcon from "@/public/icons/icon-usa.png";
+import brIcon from "/public/icons/icon-brazil.png";
+import usaIcon from "/public/icons/icon-usa.png";
 import Image from 'next/image';
 
 const LanguageSwitcher = () => {

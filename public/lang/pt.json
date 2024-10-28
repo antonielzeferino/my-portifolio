@@ -78,5 +78,27 @@
         }
       ]
     }
-  }
+  },
+  "projects": [
+    {
+      "src": "/projects/store.mp4",
+      "title": "Project Title 1",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nam veritatis soluta nulla? Unde aut iure asperiores voluptate a totam esse atque nesciunt officia laudantium sed architecto, qui ea quos?"
+    },
+    {
+      "src": "/projects/save-nature.mp4",
+      "title": "Project Title 2",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nam veritatis soluta nulla? Unde aut iure asperiores voluptate a totam esse atque nesciunt officia laudantium sed architecto, qui ea quos?"
+    },
+    {
+      "src": "/projects/store.mp4",
+      "title": "Project Title 1",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nam veritatis soluta nulla? Unde aut iure asperiores voluptate a totam esse atque nesciunt officia laudantium sed architecto, qui ea quos?"
+    },
+    {
+      "src": "/projects/save-nature.mp4",
+      "title": "Project Title 2",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nam veritatis soluta nulla? Unde aut iure asperiores voluptate a totam esse atque nesciunt officia laudantium sed architecto, qui ea quos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nam veritatis soluta nulla? Unde aut"
+    }
+  ]  
 }
