@@ -7,7 +7,7 @@ import { useIdiom } from '@/provider/idiomProvider';
 import en from '@/public/lang/en.json'; 
 import pt from '@/public/lang/pt.json'; 
 
-export const textTransition = "transition-all duration-200 ease-in-out hover:text-purple-900 hover:scale-105";
+export const textTransition = "transition-all duration-200 ease-in-out hover:text-purple-700 hover:scale-105";
 
 function HabilitiesList() {
   const { idiom } = useIdiom();

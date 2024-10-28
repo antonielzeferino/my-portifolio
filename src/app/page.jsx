@@ -3,7 +3,7 @@
 import Image from "next/image";
 import profilePhoto from '@/public/images/profile.png';
 import galaxy from '@/public/backgrounds/galaxy.png';
-import projectsBG from '@/public/backgrounds/kl.png';
+import projectsBG from '@/public/backgrounds/galaxy2.png';
 import HabilitiesList from "@/components/HabilitiesList";
 import en from "@/public/lang/en.json";
 import pt from "@/public/lang/pt.json";
@@ -40,7 +40,8 @@ export default function Home() {
         style={{
           backgroundImage: `url(${galaxy.src})`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center'
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
         }}
       >
         <LanguageSwitcher />
@@ -91,9 +92,11 @@ export default function Home() {
       </section>
       <section
         style={{
-          backgroundImage: `url(${projectsBG.src})`,
+          backgroundImage: `url(${galaxy.src})`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center'
+          backgroundPosition: 'center',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed'
         }}
         className="min-h-[500px] h-[65vh]"
       >
