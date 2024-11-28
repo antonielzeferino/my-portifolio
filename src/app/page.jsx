@@ -15,7 +15,8 @@ import ProjectsList from "@/components/projectsList";
 export default function Home() {
   const { idiom } = useIdiom();
   const [t, setTranslation] = useState({});
-  const [isMobile, setIsMobile] = useState(false)
+  const [isMobile, setIsMobile] = useState(false);
+  const [isLoading, setIsLoading] = useState(true); // Estado de carregamento
 
   useEffect(() => {
     const loadTranslations = async () => {
@@ -23,16 +24,16 @@ export default function Home() {
       const data = await res.json();
       setTranslation(data);
     };
-    loadTranslations()
-  },[idiom])
+    loadTranslations();
+  }, [idiom]);
 
   useEffect(() => {
-    if (window.innerWidth < 768) {
-      setIsMobile(true)
-    } else (
-      setIsMobile(false)
-    )
-  },[])
+    setIsMobile(window.innerWidth < 768);
+
+    const img = new window.Image();;
+    img.src = isMobile ? galaxyMobile.src : galaxy.src;
+    img.onload = () => setIsLoading(false);
+  }, [isMobile]);
 
   const defaultTranslation = {
     profile: {
@@ -44,6 +45,16 @@ export default function Home() {
   };
 
   const translation = Object.keys(t).length > 0 ? t : defaultTranslation;
+
+  if (isLoading) {
+    return (
+      <div className="flex items-center justify-center min-h-screen bg-black">
+        <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500"></div>
+        <p className="text-white text-xl ml-4">Carregando...</p>
+      </div>
+    );
+  }
+
 
   return (
     <>
