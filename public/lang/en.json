@@ -81,25 +81,25 @@
   },
   "projects": [
     {
-      "src": "/projects/store.mp4",
-      "title": "Project Title 1",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nam veritatis soluta nulla? Unde aut iure asperiores voluptate a totam esse atque nesciunt officia laudantium sed architecto, qui ea quos?"
+      "src": "/projects/coffee-dev2.png",
+      "title": "Coffee Dev",
+      "description": "Coffee Dev is a mock online store that offers a variety of coffee-related products, including different types of coffee, snacks, and takeaway options. The main goal of this project is to provide a practical platform for me to apply and refine my front-end development skills using Next.js."
     },
     {
-      "src": "/projects/save-nature.mp4",
+      "src": "/projects/save-nature.png",
       "title": "Project Title 2",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nam veritatis soluta nulla? Unde aut iure asperiores voluptate a totam esse atque nesciunt officia laudantium sed architecto, qui ea quos?"
     },
     {
-      "src": "/projects/store.mp4",
-      "title": "Project Title 1",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nam veritatis soluta nulla? Unde aut iure asperiores voluptate a totam esse atque nesciunt officia laudantium sed architecto, qui ea quos?"
+      "src": "/projects/web-store.png",
+      "title": "Web Store",
+      "description": "Web Store is an online store that sells affiliate products from Shopee. Developed using React, Bootstrap, and Firebase, the project provides a responsive and easy-to-manage user experience, ensuring a modern and interactive design."
     },
     {
-      "src": "/projects/save-nature.mp4",
+      "src": "/projects/coffee-dev.png",
       "title": "Project Title 2",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nam veritatis soluta nulla? Unde aut iure asperiores voluptate a totam esse atque nesciunt officia laudantium sed architecto, qui ea quos?Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nam veritatis soluta nulla? Unde aut"
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nam veritatis soluta nulla? Unde aut iure asperiores voluptate a totam esse atque nesciunt officia laudantium sed architecto, qui ea quos?Lorem ipsum dolor sit amet consectetur adipisicing elit."
     }
-  ]
+  ]  
   
 }
