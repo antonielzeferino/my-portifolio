@@ -12,7 +12,7 @@ const LanguageSwitcher = () => {
   };
 
   return (
-    <div className="z-50 sticky top-5 right-5 flex w-max rounded-full p-1 gap-2 bg-gradient-to-r from-purple-800/70 to-indigo-800/70 shadow-md" style={{ marginLeft: 'auto' }}>
+    <div className="flex w-max rounded-full p-1 gap-2 bg-gradient-to-r from-purple-800/70 to-indigo-800/70 shadow-md" style={{ marginLeft: 'auto' }}>
       <button
         onClick={() => handleLanguageChange('pt')}
         className={`p-1 rounded-full transition-transform transform hover:scale-105 ${

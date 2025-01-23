@@ -7,12 +7,12 @@
   },
   "habilities": [
     {
-      "title": "Linguagens de Programação",
+      "title": "Tecnologias Principais",
       "content": [
         "JavaScript",
         "TypeScript",
-        "HTML",
-        "CSS"
+        "Node.js",
+        "SQL"
       ]
     },
     {
@@ -21,7 +21,7 @@
         "React.js",
         "Next.js",
         "Tailwind CSS",
-        "Bootstrap"
+        "Prisma ORM"
       ]
     },
     {
@@ -83,22 +83,20 @@
     {
       "src": "/projects/coffee-dev2.png",
       "title": "Coffee Dev",
+      "link": "https://coffee-dev-nine.vercel.app",
       "description": "Coffee Dev é uma loja online simulada que oferece uma variedade de produtos relacionados ao café. O principal objetivo deste projeto é fornecer uma plataforma prática para que eu possa aplicar e aprimorar minhas habilidades de desenvolvimento front-end utilizando Next.js."
     },
     {
       "src": "/projects/save-nature.png",
       "title": "Save Nature",
+      "link": "https://save-nature-ten.vercel.app",
       "description": "Save Nature é uma plataforma interativa que promove a preservação ambiental. Com um design moderno, oferece informações e inspirações para práticas sustentáveis, conscientizando os usuários sobre a importância da conservação da natureza."
     },
     {
       "src": "/projects/web-store.png",
       "title": "Web Store",
+      "link": "https://menosde20.vercel.app/",
       "description": "Web Store é uma loja virtual que vende produtos afiliados da Shopee. Desenvolvido com React, Bootstrap e Firebase, o projeto oferece uma experiência de usuário responsiva e fácil de gerenciar, garantindo um design moderno e interativo."
-    },
-    {
-      "src": "/projects/coffee-dev.png",
-      "title": "Project Title 2",
-      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi nam veritatis soluta nulla? Unde aut iure asperiores voluptate a totam esse atque nesciunt officia laudantium sed architecto, qui ea quos?Lorem ipsum dolor sit amet consectetur adipisicing elit."
     }
-  ]  
+  ]
 }

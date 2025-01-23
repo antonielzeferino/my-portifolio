@@ -26,7 +26,7 @@ function HabilitiesList() {
           key={index} 
           data-aos="fade-right"
           data-aos-delay={index * 400}
-          className="w-5/6 max-w-full sm:max-w-80 lg:max-w-sm h-auto rounded-lg bg-black/30 backdrop-blur-md border border-blue-700 p-6 shadow-lg transition-transform duration-300 hover:scale-105"
+          className="w-full max-w-72 sm:max-w-80 lg:max-w-sm h-auto rounded-lg bg-black/30 backdrop-blur-md border border-blue-700 p-6 shadow-lg transition-transform duration-300 hover:scale-105"
         >
           <h5 className="text-center text-blue-600 font-semibold mb-4">
             {hability.title}

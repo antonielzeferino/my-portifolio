@@ -16,7 +16,7 @@ export default function Home() {
   const { idiom } = useIdiom();
   const [t, setTranslation] = useState({});
   const [isMobile, setIsMobile] = useState(false);
-  const [isLoading, setIsLoading] = useState(true); // Estado de carregamento
+  const [isLoading, setIsLoading] = useState(true); 
 
   useEffect(() => {
     const loadTranslations = async () => {
@@ -59,7 +59,7 @@ export default function Home() {
   return (
     <>
       <section
-        className="w-full min-h-[90vh]"
+        className="w-full min-h-[90vh] p-2 "
         style={{
           backgroundImage: `url(${isMobile ? galaxyMobile.src : galaxy.src})`,
           backgroundSize: 'cover',
@@ -72,6 +72,7 @@ export default function Home() {
           <figure className="max-w-72 lg:max-w-96 min-w-60 m-auto md:m-0">
             <Image
               data-aos="fade-up"
+              data-aos-delay= "100"
               src={profilePhoto}
               alt={translation.profile.profile_alt}
               width={600}
@@ -83,20 +84,21 @@ export default function Home() {
 
           <article className="text-white mt-5 md:mt-0">
             <h1
-              className="font-fontProsto text-2xl md:text-3xl lg:text-5xl uppercase text-center"
+              className="font-fontProsto text-xl md:text-3xl lg:text-5xl uppercase text-center"
               data-aos="fade-right"
+              data-aos-delay= "100"
             >
               {translation.profile.name}
             </h1>
             <h3
-              className="font-fontDmMono capitalize text-center font-medium text-xl md:text-2xl lg:text-3xl"
+              className="font-fontDmMono capitalize text-center font-medium text-lg md:text-2xl lg:text-3xl"
               data-aos="fade-right"
               data-aos-delay="300"
             >
               {translation.profile.job_title}
             </h3>
             <p
-              className="indent-2 max-w-[700px] mt-5 p-2 text-justify md:text-base lg:text-lg"
+              className="indent-2 max-w-[700px] mt-5 p-2 text-justify text-xs md:text-base lg:text-lg"
               data-aos="fade-right"
               data-aos-delay="700"
               data-aos-duration="1200"
