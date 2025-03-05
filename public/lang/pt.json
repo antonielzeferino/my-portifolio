@@ -34,28 +34,84 @@
       ]
     }
   ],
-  "skills": [
-    {
-      "title": "Liderança",
-      "description": "Como vice-coordenador do Grupo de Jovens, desenvolvi habilidades de liderança ao gerenciar equipes, coordenar eventos e resolver conflitos de forma eficaz."
-    },
-    {
-      "title": "Trabalho em equipe",
-      "description": "Colaborei ativamente com diversos membros, garantindo a boa comunicação e a harmonia entre o grupo."
-    },
-    {
-      "title": "Organização",
-      "description": "Ao atuar como tesoureiro, fui responsável pela administração eficiente dos recursos financeiros, aprimorando minhas habilidades organizacionais."
-    },
-    {
-      "title": "Gestão de projetos",
-      "description": "Coordenei eventos, garantindo o planejamento e execução de atividades dentro dos prazos e com os recursos disponíveis."
-    },
-    {
-      "title": "Resolução de conflitos",
-      "description": "Enfrentei e resolvi problemas de forma eficaz, buscando sempre a melhor solução para o grupo."
-    }
-  ],
+"skills": [
+  {
+    "title": "Desenvolvimento Responsivo",
+    "description": "Criação de sites que se adaptam a diferentes dispositivos."
+  },
+  {
+    "title": "SEO",
+    "description": "Práticas de otimização para melhorar a visibilidade nos buscadores."
+  },
+  {
+    "title": "UI Agradável",
+    "description": "Design de interfaces intuitivas e atraentes."
+  },
+  {
+    "title": "Acessibilidade",
+    "description": "Criação de interfaces acessíveis para todos os usuários."
+  },
+  {
+    "title": "HTML5",
+    "description": "Domínio da estruturação semântica de páginas web."
+  },
+  {
+    "title": "CSS3",
+    "description": "Estilização de páginas com foco em design moderno e responsivo."
+  },
+  {
+    "title": "JavaScript",
+    "description": "Programação dinâmica e interativa no front-end."
+  },
+  {
+    "title": "TypeScript",
+    "description": "Desenvolvimento em JavaScript com tipagem estática."
+  },
+  {
+    "title": "React.js",
+    "description": "Criação de interfaces ricas com componentes reutilizáveis."
+  },
+  {
+    "title": "Next.js",
+    "description": "Desenvolvimento de aplicações otimizadas com React e SSR."
+  },
+  {
+    "title": "Tailwind CSS",
+    "description": "Utilização de classes utilitárias para estilização rápida e eficaz."
+  },
+  {
+    "title": "Bootstrap",
+    "description": "Framework CSS para construção de layouts responsivos."
+  },
+  {
+    "title": "Git & GitHub",
+    "description": "Controle de versões e colaboração em projetos."
+  },
+  {
+    "title": "Prisma ORM",
+    "description": "Interação com banco de dados utilizando ORM eficiente."
+  },
+  {
+    "title": "Node.js",
+    "description": "Desenvolvimento de aplicações back-end com JavaScript."
+  },
+  {
+    "title": "SQL",
+    "description": "Manipulação de dados em bancos de dados relacionais."
+  },
+  {
+    "title": "APIs REST",
+    "description": "Criação e consumo de APIs RESTful para comunicação entre sistemas."
+  },
+  {
+    "title": "Desempenho Web",
+    "description": "Otimização de sites para carregamento rápido e eficiente."
+  },
+  {
+    "title": "Comunicação Eficaz",
+    "description": "Habilidade em transmitir ideias de forma clara e objetiva."
+  }
+],
   "footer": {
     "contact": {
       "title": "Entre em contato",
@@ -95,8 +151,13 @@
     {
       "src": "/projects/web-store.png",
       "title": "Web Store",
-      "link": "https://menosde20.vercel.app/",
+      "link": "https://menosde20.vercel.app",
       "description": "Web Store é uma loja virtual que vende produtos afiliados da Shopee. Desenvolvido com React, Bootstrap e Firebase, o projeto oferece uma experiência de usuário responsiva e fácil de gerenciar, garantindo um design moderno e interativo."
+    },{
+      "src": "/projects/travel.png",
+      "title": "Viaje agora",
+      "link": "https://projeto-viagem-twelve.vercel.app",
+      "description": "Viaje agora é uma plataforma inovadora que oferece pacotes de viagens personalizados, passagens aéreas, hospedagens e serviços relacionados a turismo. O design moderno e funcional permite aos usuários explorar destinos incríveis com facilidade e conforto."
     }
   ]
 }

@@ -36,24 +36,80 @@
   ],
   "skills": [
     {
-      "title": "Leadership",
-      "description": "As vice-coordinator of the Youth Group, I developed leadership skills by managing teams, coordinating events, and effectively resolving conflicts."
+      "title": "Responsive Development",
+      "description": "Creating websites that adapt to different devices."
     },
     {
-      "title": "Teamwork",
-      "description": "I actively collaborated with various members, ensuring good communication and harmony within the group."
+      "title": "SEO",
+      "description": "Optimization practices to improve search engine visibility."
     },
     {
-      "title": "Organization",
-      "description": "As treasurer, I was responsible for the efficient administration of financial resources, enhancing my organizational skills."
+      "title": "Pleasant UI",
+      "description": "Designing intuitive and attractive interfaces."
     },
     {
-      "title": "Project Management",
-      "description": "I coordinated events, ensuring planning and execution of activities within deadlines and with available resources."
+      "title": "Accessibility",
+      "description": "Creating accessible interfaces for all users."
     },
     {
-      "title": "Conflict Resolution",
-      "description": "I faced and resolved problems effectively, always seeking the best solution for the group."
+      "title": "HTML5",
+      "description": "Mastery of semantic structuring of web pages."
+    },
+    {
+      "title": "CSS3",
+      "description": "Styling pages with a focus on modern and responsive design."
+    },
+    {
+      "title": "JavaScript",
+      "description": "Dynamic and interactive front-end programming."
+    },
+    {
+      "title": "TypeScript",
+      "description": "Developing in JavaScript with static typing."
+    },
+    {
+      "title": "React.js",
+      "description": "Building rich interfaces with reusable components."
+    },
+    {
+      "title": "Next.js",
+      "description": "Developing optimized applications with React and SSR."
+    },
+    {
+      "title": "Tailwind CSS",
+      "description": "Using utility classes for fast and efficient styling."
+    },
+    {
+      "title": "Bootstrap",
+      "description": "CSS framework for building responsive layouts."
+    },
+    {
+      "title": "Git & GitHub",
+      "description": "Version control and collaboration on projects."
+    },
+    {
+      "title": "Prisma ORM",
+      "description": "Interacting with databases using an efficient ORM."
+    },
+    {
+      "title": "Node.js",
+      "description": "Back-end application development with JavaScript."
+    },
+    {
+      "title": "SQL",
+      "description": "Managing data in relational databases."
+    },
+    {
+      "title": "REST APIs",
+      "description": "Creating and consuming RESTful APIs for system communication."
+    },
+    {
+      "title": "Web Performance",
+      "description": "Optimizing websites for fast and efficient loading."
+    },
+    {
+      "title": "Effective Communication",
+      "description": "Ability to convey ideas clearly and objectively."
     }
   ],
   "footer": {
@@ -97,7 +153,11 @@
       "title": "Web Store",
       "link": "https://menosde20.vercel.app/",
       "description": "Web Store is an online store that sells affiliate products from Shopee. Developed using React, Bootstrap, and Firebase, the project provides a responsive and easy-to-manage user experience, ensuring a modern and interactive design."
-    }
-  ]  
-  
+    },{
+      "src": "/projects/travel.png",
+      "title": "Viaje agora",
+      "link": "https://projeto-viagem-twelve.vercel.app/",
+      "description": "Viaje agora is an innovative platform offering personalized travel packages, flights, accommodations, and tourism-related services. The modern and functional design allows users to explore amazing destinations with ease and comfort."
+    }    
+  ]
 }

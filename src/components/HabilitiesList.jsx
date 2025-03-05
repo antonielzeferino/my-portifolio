@@ -20,18 +20,18 @@ function HabilitiesList() {
   },[idiom]);
 
   return (
-    <div className="flex flex-wrap gap-8 mt-10 p-4 justify-center items-center">
+    <div className="flex flex-wrap md:grid md:grid-cols-3 gap-8 mt-10 p-4 justify-center items-center">
       {t.habilities && t.habilities.map((hability, index) => (
         <div 
           key={index} 
           data-aos="fade-right"
           data-aos-delay={index * 400}
-          className="w-full max-w-72 sm:max-w-80 lg:max-w-sm h-auto rounded-lg bg-black/30 backdrop-blur-md border border-blue-700 p-6 shadow-lg transition-transform duration-300 hover:scale-105"
+          className="w-full h-auto rounded-lg bg-black/30 backdrop-blur-md border border-blue-700 p-6 shadow-lg transition-transform duration-300 hover:scale-105"
         >
           <h5 className="text-center text-blue-600 font-semibold mb-4">
             {hability.title}
           </h5>
-          <ul className="space-y-2 cursor-default">
+          <ul className="cursor-default sm:grid sm:grid-cols-2 gap-y-2 md:grid-cols-1 sm:mx-auto p-4">
             {hability.content.map((el, idx) => (
               <li 
                 key={idx} 

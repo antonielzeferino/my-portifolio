@@ -15,7 +15,7 @@ function Footer() {
   },[idiom])
 
   return (
-    <footer className="text-white p-8 bg-gradient-to-r from-purple-800 to-blue-700" >
+    <footer className="text-white py-14 px-2 bg-gradient-to-r from-purple-800 to-blue-700" >
       <h2 className="text-xl indent-2">{t.footer?.contact?.title}</h2>
       <div className="flex justify-center flex-wrap gap-2 mt-2 m-auto">
         {t.footer?.contact?.links?.map((link, index) => (

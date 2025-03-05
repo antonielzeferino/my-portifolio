@@ -28,12 +28,19 @@ export default function Home() {
   }, [idiom]);
 
   useEffect(() => {
-    setIsMobile(window.innerWidth < 768);
-
-    const img = new window.Image();;
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+  
+    const resizeObserver = new ResizeObserver(handleResize);
+    resizeObserver.observe(document.body);
+  
+    const img = new window.Image();
     img.src = isMobile ? galaxyMobile.src : galaxy.src;
     img.onload = () => setIsLoading(false);
-  }, [isMobile]);
+  
+    return () => resizeObserver.disconnect();
+  }, [isMobile]);  
 
   const defaultTranslation = {
     profile: {
@@ -48,7 +55,7 @@ export default function Home() {
 
   if (isLoading) {
     return (
-      <div className="flex items-center justify-center min-h-screen bg-black">
+      <div className="flex flex-col gap-2 items-center justify-center min-h-screen bg-black">
         <div className="animate-spin rounded-full h-16 w-16 border-t-4 border-blue-500"></div>
         <p className="text-white text-xl ml-4">Carregando...</p>
       </div>
@@ -68,7 +75,7 @@ export default function Home() {
         }}
       >
         <LanguageSwitcher />
-        <div className="md:flex flex-row-reverse px-4 md:px-8 items-center justify-center gap-4 md:gap-6">
+        <div className="md:flex flex-row-reverse px-4 items-center justify-between lg:justify-center gap-4 md:gap-6">
           <figure className="max-w-72 lg:max-w-96 min-w-60 m-auto md:m-0">
             <Image
               data-aos="fade-up"
@@ -98,7 +105,7 @@ export default function Home() {
               {translation.profile.job_title}
             </h3>
             <p
-              className="indent-2 max-w-[700px] mt-5 p-2 text-justify text-xs md:text-base lg:text-lg"
+              className="indent-2 max-w-[700px] mt-5 text-justify text-xs md:text-base lg:text-lg"
               data-aos="fade-right"
               data-aos-delay="700"
               data-aos-duration="1200"

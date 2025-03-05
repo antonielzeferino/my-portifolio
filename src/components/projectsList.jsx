@@ -24,7 +24,7 @@ function ProjectsList() {
   };
 
   return (
-    <div className="gap-8 flex flex-wrap lg:flex-nowrap w-full min-h-[500px] p-4 items-center justify-center">
+    <div className="gap-8 flex flex-wrap lg:flex-nowrap w-full min-h-[500px] p-4 items-center justify-center px-4">
       {t.projects &&
         t.projects.map((project, index) => (
           <div
@@ -40,14 +40,15 @@ function ProjectsList() {
               onLoadingComplete={() => handleImageLoad(index)}
             />
             <div className="absolute bottom-0 left-0 w-full h-1/5 bg-gradient-to-t from-black via-transparent/90 to-transparent/40 opacity-0 group-hover:h-full group-hover:opacity-100 transition-all duration-700 rounded-b-xl flex flex-wrap items-end justify-center p-2">
-              <p className="text-white font-bold text-md md:text-xl text-center p-2">
-                <Link href={project.link} target="_blank">
-                  {project.title}
-                </Link>
-              </p>
+            <Link href={project.link} target="_blank">
+
+              <h4 className="text-white font-bold text-md md:text-xl text-center p-2">
+                {project.title}
+              </h4>
               <p className="indent-4 text-justify px-2 project-description">
                 {project.description}
               </p>
+              </Link>
             </div>
           </div>
         ))}
